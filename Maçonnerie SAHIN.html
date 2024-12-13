@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maçonnerie SAHIN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #555;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 2rem 0;
+        }
+        .image-gallery img {
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .slogan {
+            background: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .contact-buttons {
+            margin-top: 1rem;
+        }
+        .contact-buttons a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            background: #ff6600;
+            color: white;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .contact-buttons a:hover {
+            background: #cc5200;
+        }
+        form {
+            margin-top: 2rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form button {
+            background: #ff6600;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #cc5200;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maçonnerie SAHIN</h1>
+    </header>
+    <div class="slogan">
+        "Confiance, qualité et rigueur au service de vos projets."
+    </div>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#services">Nos Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">À propos</a>
+    </nav>
+    <section id="services">
+        <h2>Nos Services</h2>
+        <p>Chez Maçonnerie SAHIN, nous offrons des services de construction, rénovation, et aménagement pour vos projets de maçonnerie. Nous garantissons un travail de qualité et un respect des délais.</p>
+        <div class="image-gallery">
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/05/06/architecture-1867187_960_720.jpg" alt="Construction moderne 1">
+            <img src="https://cdn.pixabay.com/photo/2017/03/28/12/10/architecture-2184095_960_720.jpg" alt="Construction moderne 2">
+            <img src="https://cdn.pixabay.com/photo/2018/03/01/07/52/architecture-3187787_960_720.jpg" alt="Construction moderne 3">
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Email: maconneriesahin30@gmail.com | Téléphone: 06 27 20 51 53</p>
+        <p>Nous intervenons dans tout le département du Gard (30).</p>
+        <div class="contact-buttons">
+            <a href="tel:0627205153">Appeler maintenant</a>
+            <a href="mailto:maconneriesahin30@gmail.com">Envoyer un e-mail</a>
+        </div>
+        <form action="mailto:maconneriesahin30@gmail.com" method="post" enctype="text/plain">
+            <h3>Envoyez-nous un message</h3>
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Maçonnerie SAHIN est une entreprise familiale spécialisée dans la maçonnerie depuis plus de 20 ans. Notre expertise et notre passion nous permettent de concrétiser vos projets, petits et grands, avec le plus grand soin.</p>
+    </section>
+    <footer>
+        &copy; 2024 Maçonnerie SAHIN. Tous droits réservés.
+    </footer>
+</body>
+</html>
